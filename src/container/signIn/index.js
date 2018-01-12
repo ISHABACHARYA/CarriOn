@@ -53,7 +53,7 @@ export default class SignIn extends React.Component {
             style={{}}
             label={"Email Address"}
             iconClass={FontAwesomeIcon}
-            iconName={"pencil"}
+            iconName={'pencil'}
             iconColor={"white"}
             // TextInput props
             autoCapitalize={"none"}
@@ -66,7 +66,7 @@ export default class SignIn extends React.Component {
             style={{ marginTop: 10 }}
             label={"Password"}
             iconClass={FontAwesomeIcon}
-            iconName={"lock"}
+            iconName={'lock'}
             iconColor={"white"}
             secureTextEntry
             // TextInput props
