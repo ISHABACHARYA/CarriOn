@@ -9,7 +9,7 @@ export default class Navbar extends React.Component {
       <View
         style={{
           flexDirection: "row",
-          height: 90,
+          height: 60,
           width: 375,
           alignItems: "center",
           justifyContent: "center",
