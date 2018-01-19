@@ -84,6 +84,7 @@ export default class SignIn extends React.Component {
           >
             <Button
               onPress={() => this.authUser()}
+              label='Submit'
             />
           </View>
         </View>
