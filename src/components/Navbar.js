@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, Dimensions } from "react-native";
+import { View, Text, Dimensions,TouchableOpacity } from "react-native";
 import Icon from "react-native-vector-icons/Ionicons";
 
 export default class Navbar extends React.Component {
@@ -13,10 +13,11 @@ export default class Navbar extends React.Component {
           width: 375,
           alignItems: "center",
           justifyContent: "center",
-          backgroundColor:'#FF7043'
+          backgroundColor:'#FF7043',
+          paddingHorizontal:5
         }}
       >
-        <View
+        <TouchableOpacity
           style={{
             flex:1,
             height: 30,
@@ -26,7 +27,7 @@ export default class Navbar extends React.Component {
           }}
         >
           <Icon name={lIcon} size={25} color={"#fff"} onPress={lPress} />
-        </View>
+        </TouchableOpacity>
         <View
          style={{
             flex:8,
@@ -37,7 +38,7 @@ export default class Navbar extends React.Component {
           style={{fontWeight:'bold',fontSize:20, color:'#fff'}}
           >{label}</Text>
         </View>
-        <View
+        <TouchableOpacity
          style={{
             flex:1,
             height: 30,
@@ -46,7 +47,7 @@ export default class Navbar extends React.Component {
             justifyContent: "center"
           }}>
           <Icon name={rIcon} size={25} color={"#fff"} onPress={rPress} />
-        </View>
+        </TouchableOpacity>
       </View>
     );
   }

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { View, Text, TextInput } from "react-native";
+import { View, Text, TextInput,StatusBar } from "react-native";
 import { Hoshi } from "react-native-textinput-effects";
 import Navbar from "../../../components/Navbar";
 import Button from "../../../components/Button";
@@ -8,6 +8,7 @@ export default class DeliveryForm extends Component {
   render() {
     return (
       <View>
+        <StatusBar hidden />
         <Navbar
           label="Delivery Form"
           lIcon="md-arrow-back"
